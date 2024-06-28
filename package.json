@@ -1,5 +1,5 @@
 {
-  "name": "tsume_cube_typescript",
+  "name": "Learn PLL method",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://uesyuu.github.io/tsume_cube",
+  "homepage":"https://KawaguchiReiji.github.io/Rubik",
   "eslintConfig": {
     "extends": [
       "react-app",
