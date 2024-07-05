@@ -1,22 +1,58 @@
 {
-  "name": "my-react-app",
+  "name": "Learn PLL method",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kawaguchireiji.github.io/Rubik",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.25",
+    "cubing": "^0.16.7",
+    "i18next": "^20.6.1",
+    "moment": "^2.29.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^11.12.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-share": "^4.4.0",
+    "typescript": "^4.4.3",
+    "web-vitals": "^1.1.2"
+  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build:old": "react-scripts build",
+    "build": "rm -r docs/ && react-scripts build && cp -r build/ docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3"
+  "homepage":"https://KawaguchiReiji.github.io/Rubik",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "@types/i18next": "^13.0.0",
+    "@types/moment": "^2.13.0",
+    "@types/react": "^17.0.80",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-share": "^4.0.0"
   }
 }
